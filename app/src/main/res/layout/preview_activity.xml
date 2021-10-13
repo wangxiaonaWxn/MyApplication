@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+    <ImageView
+            android:id="@+id/camera_one"
+            android:layout_width="400dp"
+            android:layout_height="400dp" />
+
+    <ImageView
+        android:id="@+id/camera_two"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="410dp"/>
+
+    <ImageView
+        android:id="@+id/camera_three"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="410dp"/>
+
+    <ImageView
+        android:id="@+id/camera_four"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="410dp"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_marginBottom="50dp"/>
+</FrameLayout>
