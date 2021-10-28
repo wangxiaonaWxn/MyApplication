@@ -1,4 +1,4 @@
-package com.mega.myapplication;
+package com.mega.myapplication.camera;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -17,13 +17,15 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.mega.myapplication.R;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.List;
 
 public class MainActivityCamera extends AppCompatActivity implements Camera.PreviewCallback {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String TAG = OpenFourCameraActivity.class.getSimpleName();
     private Camera mCamera;
     private int mOpenCameraId;
     private View mRootView;

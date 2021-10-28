@@ -10,18 +10,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bf7746f-2b6d-4995-80ca-e5dbbc347fa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithm/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/mega/algorithm/MyClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/views/CommonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/views/CommonViewHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/views/GridViewActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/views/ListViewActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/views/MultTypeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/views/StaggeredGridViewActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/views/ViewTypeSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_grid_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_item_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/four_camera_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_3_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/mega/algorithm/MyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/mega/algorithm/MyClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/EncoderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/camera/EncoderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/camera/OpenFourCameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/MainActivityCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/camera/MainActivityCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/PreviewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/camera/PreviewActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/VideoCutActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/VideoDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mega/myapplication/record/RecordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_teste.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_teste.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_video_cut.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_video_cut.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/encoder_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/encoder_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/preview_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/preview_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/record_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/record_activity.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +92,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,13 +114,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mega.myapplication.views" />
       <recent name="com.mega.myapplication" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MyClass">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -138,6 +180,24 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mega.algorithm.MyClass" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mega.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyClass" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -153,29 +213,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1121" y="445" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1634721593865">
+    <state x="1121" y="445" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1635413454715">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
-    <state x="1121" y="445" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.2493.1413@67.27.2493.1413" timestamp="1634721593865" />
-    <state width="2447" height="816" key="GridCell.Tab.0.bottom" timestamp="1634893983853">
+    <state x="1121" y="445" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.2493.1413@67.27.2493.1413" timestamp="1635413454715" />
+    <state width="2447" height="442" key="GridCell.Tab.0.bottom" timestamp="1635335197370">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
-    <state width="2447" height="816" key="GridCell.Tab.0.bottom/67.27.2493.1413@67.27.2493.1413" timestamp="1634893983853" />
-    <state width="2447" height="816" key="GridCell.Tab.0.center" timestamp="1634893983852">
+    <state width="2447" height="442" key="GridCell.Tab.0.bottom/67.27.2493.1413@67.27.2493.1413" timestamp="1635335197370" />
+    <state width="2447" height="442" key="GridCell.Tab.0.center" timestamp="1635335197370">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
-    <state width="2447" height="816" key="GridCell.Tab.0.center/67.27.2493.1413@67.27.2493.1413" timestamp="1634893983852" />
-    <state width="2447" height="816" key="GridCell.Tab.0.left" timestamp="1634893983845">
+    <state width="2447" height="442" key="GridCell.Tab.0.center/67.27.2493.1413@67.27.2493.1413" timestamp="1635335197370" />
+    <state width="2447" height="442" key="GridCell.Tab.0.left" timestamp="1635335197370">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
-    <state width="2447" height="816" key="GridCell.Tab.0.left/67.27.2493.1413@67.27.2493.1413" timestamp="1634893983845" />
-    <state width="2447" height="816" key="GridCell.Tab.0.right" timestamp="1634893983852">
+    <state width="2447" height="442" key="GridCell.Tab.0.left/67.27.2493.1413@67.27.2493.1413" timestamp="1635335197370" />
+    <state width="2447" height="442" key="GridCell.Tab.0.right" timestamp="1635335197370">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
-    <state width="2447" height="816" key="GridCell.Tab.0.right/67.27.2493.1413@67.27.2493.1413" timestamp="1634893983852" />
-    <state x="969" y="560" key="com.intellij.ide.util.TipDialog" timestamp="1634722916871">
+    <state width="2447" height="442" key="GridCell.Tab.0.right/67.27.2493.1413@67.27.2493.1413" timestamp="1635335197370" />
+    <state x="969" y="560" key="com.intellij.ide.util.TipDialog" timestamp="1635386754930">
       <screen x="67" y="27" width="2493" height="1413" />
     </state>
-    <state x="969" y="560" key="com.intellij.ide.util.TipDialog/67.27.2493.1413@67.27.2493.1413" timestamp="1634722916871" />
+    <state x="969" y="560" key="com.intellij.ide.util.TipDialog/67.27.2493.1413@67.27.2493.1413" timestamp="1635386754930" />
   </component>
 </project>

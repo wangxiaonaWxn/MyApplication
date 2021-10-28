@@ -1,4 +1,4 @@
-package com.mega.myapplication;
+package com.mega.myapplication.camera;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,14 +16,13 @@ import android.os.Environment;
 import android.os.storage.StorageManager;
 import android.util.Log;
 import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
+import com.mega.myapplication.R;
 import com.mega.myapplication.encoder.FormatVideoEncoder;
 import com.mega.myapplication.encoder.Frame;
 import com.mega.myapplication.encoder.GetVideoData;
@@ -39,7 +38,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.ByteBuffer;

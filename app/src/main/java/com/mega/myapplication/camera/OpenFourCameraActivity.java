@@ -1,24 +1,22 @@
-package com.mega.myapplication;
+package com.mega.myapplication.camera;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.SurfaceTexture;
 import android.os.Bundle;
-import android.view.SurfaceView;
 import android.view.TextureView;
 
-import com.mega.myapplication.camera.Camera2Manager;
-import com.mega.myapplication.camera.CameraImpl;
+import com.mega.myapplication.R;
 
-public class MainActivity extends AppCompatActivity {
+public class OpenFourCameraActivity extends AppCompatActivity {
 
     private TextureView camera0,camera1,camera2,camera3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.four_camera_activity);
         camera0 = findViewById(R.id.camera_one);
         camera1 = findViewById(R.id.camera_two);
         camera2 = findViewById(R.id.camera_three);

@@ -1,208 +1,55 @@
 package com.mega.myapplication;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.graphics.SurfaceTexture;
+import android.app.Activity;
+import android.content.Intent;
+import android.media.tv.TvContract;
 import android.os.Bundle;
-import android.view.SurfaceView;
-import android.view.TextureView;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import com.mega.myapplication.camera.Camera2Manager;
-import com.mega.myapplication.camera.CameraImpl;
+import androidx.annotation.Nullable;
 
-public class MainActivity extends AppCompatActivity {
+import com.mega.myapplication.camera.EncoderActivity;
+import com.mega.myapplication.camera.OpenFourCameraActivity;
+import com.mega.myapplication.camera.PreviewActivity;
+import com.mega.myapplication.views.GridViewActivity;
+import com.mega.myapplication.views.ListViewActivity;
+import com.mega.myapplication.views.StaggeredGridViewActivity;
 
-    private TextureView camera0,camera1,camera2,camera3;
+import org.w3c.dom.Text;
 
+public class MainActivity extends Activity {
+    private LinearLayout mContainer;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        camera0 = findViewById(R.id.camera_one);
-        camera1 = findViewById(R.id.camera_two);
-        camera2 = findViewById(R.id.camera_three);
-        camera3 = findViewById(R.id.camera_four);
-        final Camera2Manager manager0 = new Camera2Manager(new CameraImpl.CameraStateCallback() {
+        mContainer = findViewById(R.id.list_container);
+        addItemToContainer();
+    }
+
+    private void addItemToContainer() {
+        mContainer.addView(getItem("Four camera preview", OpenFourCameraActivity.class));
+        mContainer.addView(getItem("encode data from camera", EncoderActivity.class));
+        mContainer.addView(getItem("RecyclerView list view", ListViewActivity.class));
+        mContainer.addView(getItem("RecyclerView grid view", GridViewActivity.class));
+        mContainer.addView(getItem("RecyclerView Stagger view", StaggeredGridViewActivity.class));
+    }
+
+    private TextView getItem(String text, final Class activity) {
+        TextView textView = new TextView(this);
+        textView.setText(text);
+        textView.setGravity(Gravity.CENTER);
+        textView.setHeight(50);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCameraOpened() {
-
-            }
-
-            @Override
-            public void onCameraClosed() {
-
-            }
-
-            @Override
-            public void onCameraOpenFailed(int error) {
-
-            }
-        }, getApplicationContext(), new CameraImpl.TakePhotoCallback() {
-            @Override
-            public void takePhotoComplete(byte[] photoData) {
-
-            }
-        });
-
-        final Camera2Manager manager1 = new Camera2Manager(new CameraImpl.CameraStateCallback() {
-            @Override
-            public void onCameraOpened() {
-
-            }
-
-            @Override
-            public void onCameraClosed() {
-
-            }
-
-            @Override
-            public void onCameraOpenFailed(int error) {
-
-            }
-        }, getApplicationContext(), new CameraImpl.TakePhotoCallback() {
-            @Override
-            public void takePhotoComplete(byte[] photoData) {
-
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, activity);
+                startActivity(intent);
             }
         });
-
-       final Camera2Manager manager2 = new Camera2Manager(new CameraImpl.CameraStateCallback() {
-            @Override
-            public void onCameraOpened() {
-
-            }
-
-            @Override
-            public void onCameraClosed() {
-
-            }
-
-            @Override
-            public void onCameraOpenFailed(int error) {
-
-            }
-        }, getApplicationContext(), new CameraImpl.TakePhotoCallback() {
-            @Override
-            public void takePhotoComplete(byte[] photoData) {
-
-            }
-        });
-
-        final Camera2Manager manager3 = new Camera2Manager(new CameraImpl.CameraStateCallback() {
-            @Override
-            public void onCameraOpened() {
-
-            }
-
-            @Override
-            public void onCameraClosed() {
-
-            }
-
-            @Override
-            public void onCameraOpenFailed(int error) {
-
-            }
-        }, getApplicationContext(), new CameraImpl.TakePhotoCallback() {
-            @Override
-            public void takePhotoComplete(byte[] photoData) {
-
-            }
-        });
-
-
-        camera0.setSurfaceTextureListener(new TextureView.SurfaceTextureListener() {
-            @Override
-            public void onSurfaceTextureAvailable(@NonNull SurfaceTexture surface, int width, int height) {
-               manager0.setPreviewTexture(surface);
-               manager0.open(0, null, 960, 1280);
-               manager0.startPreview();
-            }
-
-            @Override
-            public void onSurfaceTextureSizeChanged(@NonNull SurfaceTexture surface, int width, int height) {
-
-            }
-
-            @Override
-            public boolean onSurfaceTextureDestroyed(@NonNull SurfaceTexture surface) {
-                return false;
-            }
-
-            @Override
-            public void onSurfaceTextureUpdated(@NonNull SurfaceTexture surface) {
-
-            }
-        });
-        camera1.setSurfaceTextureListener(new TextureView.SurfaceTextureListener() {
-            @Override
-            public void onSurfaceTextureAvailable(@NonNull SurfaceTexture surface, int width, int height) {
-                manager1.setPreviewTexture(surface);
-                manager1.open(1, null, 960, 1280);
-                manager1.startPreview();
-            }
-
-            @Override
-            public void onSurfaceTextureSizeChanged(@NonNull SurfaceTexture surface, int width, int height) {
-
-            }
-
-            @Override
-            public boolean onSurfaceTextureDestroyed(@NonNull SurfaceTexture surface) {
-                return false;
-            }
-
-            @Override
-            public void onSurfaceTextureUpdated(@NonNull SurfaceTexture surface) {
-
-            }
-        });
-        camera2.setSurfaceTextureListener(new TextureView.SurfaceTextureListener() {
-            @Override
-            public void onSurfaceTextureAvailable(@NonNull SurfaceTexture surface, int width, int height) {
-                manager2.setPreviewTexture(surface);
-                manager2.open(2, null, 960, 1280);
-                manager2.startPreview();
-            }
-
-            @Override
-            public void onSurfaceTextureSizeChanged(@NonNull SurfaceTexture surface, int width, int height) {
-
-            }
-
-            @Override
-            public boolean onSurfaceTextureDestroyed(@NonNull SurfaceTexture surface) {
-                return false;
-            }
-
-            @Override
-            public void onSurfaceTextureUpdated(@NonNull SurfaceTexture surface) {
-
-            }
-        });
-        camera3.setSurfaceTextureListener(new TextureView.SurfaceTextureListener() {
-            @Override
-            public void onSurfaceTextureAvailable(@NonNull SurfaceTexture surface, int width, int height) {
-                manager3.setPreviewTexture(surface);
-                manager3.open(3, null, 960, 1280);
-                manager3.startPreview();
-            }
-
-            @Override
-            public void onSurfaceTextureSizeChanged(@NonNull SurfaceTexture surface, int width, int height) {
-
-            }
-
-            @Override
-            public boolean onSurfaceTextureDestroyed(@NonNull SurfaceTexture surface) {
-                return false;
-            }
-
-            @Override
-            public void onSurfaceTextureUpdated(@NonNull SurfaceTexture surface) {
-
-            }
-        });
+        return textView;
     }
 }

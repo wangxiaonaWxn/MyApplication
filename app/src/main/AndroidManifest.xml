@@ -24,13 +24,18 @@
         android:supportsRtl="true"
         android:requestLegacyExternalStorage="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreviewActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".camera.PreviewActivity"/>
+        <activity android:name=".camera.EncoderActivity"/>
+        <activity android:name=".views.StaggeredGridViewActivity"/>
+        <activity android:name=".views.ListViewActivity"/>
+        <activity android:name=".views.GridViewActivity"/>
     </application>
 
 </manifest>
